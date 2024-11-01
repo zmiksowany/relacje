@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relacje</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .dot-bullet > li::before {
+            content: "• ";
+        }
+        .dash-bullet > li::before {
+            content: "- ";
+            margin-left: 20px;
+        }
+        .example {
+            margin-top: 10px;
+        }
+        .arrow {
+            font-weight: bold;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-left: 3px solid #ccc;
+            overflow-x: auto;
+        }
+        blockquote {
+            background-color: #f9f9f9;
+            border-left: 5px solid #ccc;
+            padding: 10px 20px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Relacje</h1>
+
+    <h2>1. Definicja relacji</h2>
+    <ul class="dot-bullet">
+        <li>Relacja to dowolny <strong>podzbiór</strong> iloczynu kartezjańskiego A × B.</li>
+        <li>Jest to zbiór uporządkowanych par (a, b), gdzie a ∈ A oraz b ∈ B, które spełniają określoną zależność.</li>
+    </ul>
+
+    <h2>2. Relacja w zbiorze A</h2>
+    <ul class="dot-bullet">
+        <li>Aby badać relacje w jednym zbiorze A, tworzymy iloczyn kartezjański A × A, czyli A<sup>2</sup>.</li>
+        <li>W ten sposób możemy powiązać dowolne dwa elementy zbioru A, nawet dwa te same i określić ich relację.</li>
+    </ul>
+
+    <h2>3. Para uporządkowana, a relacja</h2>
+    <ul class="dot-bullet">
+        <li>Jeżeli R ⊂ A × B i (a, b) ∈ R, to mówimy, że <strong>element a spełnia relację R z elementem b</strong>, co zapisujemy jako aRb.</li>
+        <li>W miejsce R można wstawić różne symbole relacji, np. =, <, >, czy znak podzielności |, zależnie od typu zależności.</li>
+    </ul>
+
+    <blockquote class="example">
+        <span class="arrow">Przykład:</span> Jeśli R oznacza relację równości, to aRb odpowiada relacji a = b. Jeśli R oznacza relację porządku, np. <, to aRb oznacza a < b.
+    </blockquote>
+</body>
+</html>
